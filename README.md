@@ -1,59 +1,68 @@
-# PROHI Dashboard Example
+# PROHI Sepsis Prediction Dashboard
 
-**Author**: Songyue Xie
-**Collaborator**: Khachatur Dallakyan
-<!-- As main author, do not write anything in the line below.
-The collaborator will edit the line below in GitHub -->
-**Collaborator**: Pamela Castillo
+**Team Project - PROHI Course - Group 5**
 
-_Note that this file is written in **MarkDown** language. A reference is available here: <https://www.markdownguide.org/basic-syntax/>_
+**Team Members:**
+- Max Altez Linhardt
+- Khachatur Dallakyan  
+- Pratibha Rustogi
+- Qilu Wang
+- Xue Wu
 
-_Here you can include images, like the logo from SU_
+![Dashboard Logo](./assets/project-logo.jpg)
 
-![Your dashboard](./assets/project-logo.jpg)
+## Project Overview
 
-## Introduction
+This dashboard demonstrates early sepsis prediction for ICU patients using machine learning techniques. The project analyzes a comprehensive dataset with 44 clinical features including vital signs, lab values, and demographics to predict sepsis onset.
 
-_This template project will contain a simple interactive web dashboard with Streamlit. Feel free to edit this document as desired_
+## Dataset Setup
 
-## System description
+**Important:** You need to download the dataset before running the dashboard.
 
-### Installation of libraries
+1. Download the "Prediction of Sepsis" dataset from Kaggle: https://www.kaggle.com/datasets/salikhussaini49/prediction-of-sepsis
+2. Create a `data` folder in the project root directory
+3. Place the downloaded `Dataset.csv` file in the `data/` folder
 
-Run the commands below in a terminal to configure the project and install the package dependencies for the first time.
+## Installation
 
-If you are using Mac, you may need to install Xcode. Check the official Streamlit documentation [here](https://docs.streamlit.io/get-started/installation/command-line#prerequisites).
+1. Create a virtual environment:
+   ```bash
+   python -m venv env
+   ```
 
-1. Create the environment with `python -m venv env`
-2. Activate the virtual environment for Python
-   - [Linux/Mac] `source env/bin/activate` 
-   - [Windows command prompt] `.\env\Scripts\activate.bat` 
-   - [in Windows PowerShell] `.\env\Scripts\Activate.ps1`
-3. Make sure that your terminal is in the environment (`env`) not in the global Python installation. The terminal should start with the word `env`
-4. Install required packages `pip install -r ./requirements.txt`
-5. Check that the installation works running `streamlit hello`
-6. Stop the terminal by pressing **Ctrl+C**
+2. Activate the virtual environment:
+   - **Windows PowerShell:** `.\env\Scripts\Activate.ps1`
+   - **Windows Command Prompt:** `.\env\Scripts\activate.bat`
+   - **Linux/Mac:** `source env/bin/activate`
 
-### Execute custom Dashboard
+3. Install required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-First, make sure that you are running Python from the environment. Check the steps 2 and 3 above. Then, to run the custom dashboard execute the following command:
+## Running the Dashboard
 
+Make sure your virtual environment is activated, then run:
+
+```bash
+streamlit run Dashboard.py
 ```
-> streamlit run Dashboard.py
-# If the command above fails, use:
-> python -m streamlit run Dashboard.py
+
+If the above command fails, try:
+```bash
+python -m streamlit run Dashboard.py
 ```
 
-### Dependencies
+The dashboard will open in your web browser at `http://localhost:8501`
 
-Tested on Python 3.12.7 with the following packages:
-  - Jupyter v1.1.1
-  - Streamlit v1.46.1
-  - Seaborn v0.13.2
-  - Plotly v6.2.0
-  - Scikit-Learn v1.7.0
-  - shap v0.48.0
+## Dependencies
 
-## Contributors
-
-_Add the project's authors, contact information, and links to websites or portfolios._
+- Python 3.8+
+- Streamlit
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- SHAP
+- Pillow (PIL)
