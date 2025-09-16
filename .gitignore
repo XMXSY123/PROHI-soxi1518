@@ -165,3 +165,5 @@ cython_debug/
 
 # Dataset files
 data/Dataset.csv
+data/cleaned_dataset.csv
+models/

@@ -34,8 +34,8 @@ Sepsis is a life-threatening condition that caused 11 million deaths globally in
 
 ### Navigation
 1. **Data Preprocessing** - Missing data analysis and imputation strategies
-2. **Model Analysis** - Machine learning model comparison and results
-3. **Prediction Dashboard** - Interactive sepsis risk prediction
+2. **Model Training** - Machine learning approaches and training results
+3. **Feature Importance** - Clinical interpretation of predictive features
 """)
 
 
