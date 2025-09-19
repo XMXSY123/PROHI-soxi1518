@@ -15,7 +15,7 @@ warnings.filterwarnings('ignore')
 CONFIG = {
     'THRESHOLD_SEPSIS': 0.6,      # Above this = Sepsis
     'THRESHOLD_NO_SEPSIS': 0.3,   # Below this = No Sepsis  
-    'MODEL_PATH': 'models/random_forest_model.pkl',
+    'MODEL_PATH': 'models/xgboost_model.pkl',
     'LOGO_PATH': './assets/project-logo.jpg',
     'PARLIAMENT_SIZE': 15,
     'CONSENSUS_STRONG': 80,

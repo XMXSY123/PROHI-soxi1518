@@ -1,6 +1,12 @@
 # PROHI Sepsis Prediction Dashboard
 
+
 **Team Project - PROHI Course - Group 5**
+=======
+**Author**: Songyue Xie
+**Collaborator**: Khachatur Dallakyan
+**Collaborator**: Pamela Castillo
+
 
 **Team Members:**
 - Max Altez Linhardt
