@@ -4,7 +4,12 @@
 **Team Project - PROHI Course - Group 5**
 =======
 **Author**: Songyue Xie
+<<<<<<< HEAD
 **Collaborator**: Khachatur Dallakyan
+=======
+<!-- As main author, do not write anything in the line below.
+The collaborator will edit the line below in GitHub -->
+>>>>>>> parent of 91bb608 (Adding another collaborator)
 **Collaborator**: Pamela Castillo
 
 
