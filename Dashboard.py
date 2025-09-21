@@ -130,7 +130,7 @@ st.markdown("---")
 st.markdown(
     """
     <div style='text-align: center; color: gray;'>
-        <p>PROHI Dashboard | Health Informatics Analytics Platform</p>
+        <p>PROHI Dashboard by Songyue XIE</p>
     </div>
     """,
     unsafe_allow_html=True
