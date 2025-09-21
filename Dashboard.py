@@ -9,7 +9,10 @@ st.set_page_config(
     layout="wide"
 )
 
-st.sidebar.image("./assets/img.png", width=200)
+st.sidebar.image("./assets/Hachiware.png", width=200)
+st.sidebar.image("./assets/Chiikawa.png", width=200)
+st.sidebar.image("./assets/Usage.png", width=200)
+
 st.title("PROHI Dashboard")
 st.markdown("---")
 
@@ -26,7 +29,7 @@ with col1:
         key="patient_cat"
     )
 
-# 输入小部件 2: 滑块
+
 with col2:
     st.write("**Age Range**")
     age_range = st.slider(
@@ -35,7 +38,7 @@ with col2:
         key="age_slider"
     )
 
-# 输入小部件 3: 日期选择器
+
 with col3:
     st.write("**Analysis Period**")
     date_range = st.date_input(
@@ -46,10 +49,9 @@ with col3:
 
 st.markdown("---")
 
-# 数据展示部分
+
 st.subheader("Data Overview")
 
-# 生成合成数据
 np.random.seed(42)
 data = {
     'Patient_ID': [f'P{str(i).zfill(4)}' for i in range(1, 101)],
@@ -64,7 +66,6 @@ data = {
 df = pd.DataFrame(data)
 df['Treatment_Cost'] = df['Treatment_Cost'].clip(lower=1000)  # 确保费用为正数
 
-# 显示数据表格
 st.dataframe(
     df.head(20),
     use_container_width=True,
@@ -87,7 +88,6 @@ with chart_col1:
     fig_pie = px.pie(
         values=dept_counts.values,
         names=dept_counts.index,
-        title="Patients by Department",
         color_discrete_sequence=px.colors.qualitative.Set3
     )
     fig_pie.update_traces(textposition='inside', textinfo='percent+label')
@@ -99,7 +99,6 @@ with chart_col2:
         df,
         x='Age',
         nbins=20,
-        title="Patient Age Distribution",
         color_discrete_sequence=['#636EFA']
     )
     fig_hist.update_layout(
@@ -115,7 +114,6 @@ fig_scatter = px.scatter(
     y='Treatment_Cost',
     color='Department',
     size='Satisfaction_Score',
-    title="Treatment Cost vs Length of Stay by Department",
     hover_data=['Patient_ID', 'Age', 'Gender']
 )
 fig_scatter.update_layout(
@@ -127,7 +125,7 @@ st.plotly_chart(fig_scatter, use_container_width=True)
 st.markdown("---")
 
 
-# 页脚
+
 st.markdown("---")
 st.markdown(
     """
