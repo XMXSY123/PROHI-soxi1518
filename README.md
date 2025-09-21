@@ -5,17 +5,18 @@
 The collaborator will edit the line below in GitHub -->
 **Collaborator**: Pamela Castillo
 
-_Note that this file is written in **MarkDown** language. A reference is available here: <https://www.markdownguide.org/basic-syntax/>_
-
-_Here you can include images, like the logo from SU_
-
-![Your dashboard](./assets/project-logo.jpg)
-
+## Dashboard Sample
+![截屏2025-09-21 22.55.36.png](assets/%E6%88%AA%E5%B1%8F2025-09-21%2022.55.36.png)
+![截屏2025-09-21 22.55.48.png](assets/%E6%88%AA%E5%B1%8F2025-09-21%2022.55.48.png)
+![截屏2025-09-21 22.55.55.png](assets/%E6%88%AA%E5%B1%8F2025-09-21%2022.55.55.png)
 ## Introduction
 
-_This template project will contain a simple interactive web dashboard with Streamlit. Feel free to edit this document as desired_
+This Streamlit dashboard contains  
 
-## System description
+    1 Sidebar,
+    3 Interactive controllers
+    1 Table
+    3 Visual charts
 
 ### Installation of libraries
 
